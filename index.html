@@ -1,30 +1,57 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | btmeta</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="BTMetaStyle.css" />
+    <script src="BTMetaScript.js"></script>
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <div class="bt_wrapper">
+      <div class="bt_laucher">
+        <div class="bt_icon_wrapper" id="bt_icon">
+          <div class="bt_icon_styled">
+            <div class="bt_icon">
+              <img
+                src="/asset/BT Meta logo white .svg"
+                alt="Bt Meta Logo Icon"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div id="unity-mobile-warning">
-        WebGL builds are not supported on mobile devices.
-      </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">btmeta</div>
+      <div class="bt_canvas">
+        <div class="bt_meta_wrapper" id="bt_canvas">
+          <div class="bt_meta_styled">
+            <div class="bt_meta_close_btn" id="bt_meta_close_btn">
+              X
+            </div>
+            <div id="unity-container" class="unity-desktop">
+              <canvas id="unity-canvas" width=960 height=600></canvas>
+              <div id="unity-loading-bar">
+                <div id="unity-logo"></div>
+                <div id="unity-progress-bar-empty">
+                  <div id="unity-progress-bar-full"></div>
+                </div>
+              </div>
+              <div id="unity-mobile-warning">
+                WebGL builds are not supported on mobile devices.
+              </div>
+              <div id="unity-footer">
+                <!-- <div id="unity-webgl-logo"></div> -->
+                <div id="unity-fullscreen-button"></div>
+                <div id="unity-build-title">전체화면</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </body>
+   
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL.loader.js";
@@ -62,8 +89,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "860px";
+        canvas.style.height = "500px";
       }
       loadingBar.style.display = "block";
 
