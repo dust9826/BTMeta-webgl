@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>국가보훈처</title>
+	<link type="text/css" rel="stylesheet" href="css/reset.css"/>
+	<link type="text/css" rel="stylesheet" href="css/jquery-ui.css"/>
+	<link type="text/css" rel="stylesheet" href="css/ui.css"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="css/rangeslider.min.css"/>
+	<link type="text/css" rel="stylesheet" href="css/responsive.css"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="BTMetaStyle.css" />
+    <script src="BTMetaScript.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+	<header>
+		<div class="header__wrap">
+
+			<a href="javascript:mobileMenuOpen();" class="mobile-btn"></a>
+
+			<h1 class="logo">
+				<a href="#none"></a>
+			</h1>
+
+
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<nav class="lnb">
+
+			<div class="lnb__header">
+				<div class="profile-box">
+					<div class="img-box">
+						<img src="img/ic_profile.png" alt="이미지">
+					</div>
+					<div class="txt-box">김태희<span class="unit">님</span></div>
+				</div>
+
+				<a href="javascript:mobileMenuClose();" class="close-btn"></a>
+
+			</div>
+			<div class="lnb__body">
+				<ul class="lnb__menu">
+					<li class="on">
+						<a href="#none">
+							<div class="txt-box">국내 현충시설</div>
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<div class="txt-box">국외 참전시설</div>
+						</a>
+					</li>
+				</ul>
+				<div class="lnb__con">
+					<a href="#none" class="toggle-btn"></a>
+
+					<div class="lnb__con__wrap">
+
+						<div class="search__box">
+							<div class="input-box">
+								<input placeholder="검색어를 입력하세요">
+								<a href="#none" class="search-btn"></a>
+							</div>
+							<div class="search-result-box">
+								<div class="top-box">검색결과 <span class="accent">총 N개</span></div>
+								<div class="result-list">
+									<ul>
+										<li>
+											<a href="javascript:resultHide()">
+												<div class="tit-box">홍길동 기념관</div>
+												<div class="info-box">
+													<div class="row">- 소재지 : 서울특별시</div>
+													<div class="row">- 종류 : 기념관</div>
+													<div class="row">- 주제 : 국가수호>6.25전쟁</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:resultHide()">
+												<div class="tit-box">홍길동 기념관</div>
+												<div class="info-box">
+													<div class="row">- 소재지 : 서울특별시</div>
+													<div class="row">- 종류 : 기념관</div>
+													<div class="row">- 주제 : 국가수호>6.25전쟁</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="result-paging">
+									<article class="paging">
+										<ul>
+											<li class="prev"><a href="#none" class=""></a></li>
+											<li class="num current"><a href="#none" class=" ">1</a></li>
+											<li class="num"><a href="#none" class="">2</a></li>
+											<li class="num"><a href="#none" class="">3</a></li>
+											<li class="num"><a href="#none" class="">4</a></li>
+											<li class="num"><a href="#none" class="">5</a></li>
+											<li class="next"><a href="#none" class=""></a></li>
+										</ul>
+									</article>
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__box">
+							<ul>
+
+								<li class=""><a href="#none">전체</a></li>
+								<li class="on"><a href="#none">독립운동</a></li>
+								<li><a href="#none">국가수호</a></li>
+							</ul>
+						</div>
+
+						<div class="group__box">
+							<ul>
+								<li class=""><a href="#none" data-group="group1"><span class="txt">전체보기</span></a></li>
+								<li class="on"><a href="#none" data-group="group2"><span class="txt">시설별</span></a></li>
+								<li><a href="#none" data-group="group3"><span class="txt">주제별</span></a></li>
+								<li><a href="#none" data-group="group4"><span class="txt">연도별</span></a></li>
+							</ul>
+						</div>
+
+						<div class="group__area">
+
+							<div class="group__result_box" data-group="group1">
+
+							</div>
+							<div class="group__result_box" data-group="group2" style="display: block;">
+								<ul>
+									<li><a href="#none">전체</a></li>
+									<li class="on"><a href="#none">기념관</a></li>
+									<li><a href="#none">공원</a></li>
+									<li><a href="#none">생가</a></li>
+									<li><a href="#none">사적지</a></li>
+									<li><a href="#none">탑</a></li>
+									<li><a href="#none">동상</a></li>
+									<li><a href="#none">조형물</a></li>
+									<li><a href="#none">사당</a></li>
+									<li><a href="#none">비석</a></li>
+									<li><a href="#none">장소</a></li>
+									<li><a href="#none">기타</a></li>
+								</ul>
+							</div>
+							<div class="group__result_box" data-group="group3">
+								<ul>
+									<li><a href="#none">전체</a></li>
+									<li class="on"><a href="#none">3·1운동</a></li>
+									<li><a href="#none">문화운동</a></li>
+									<li><a href="#none">의병운동</a></li>
+									<li><a href="#none">의열투쟁</a></li>
+									<li><a href="#none">학생운동</a></li>
+									<li><a href="#none">한말구국운동</a></li>
+									<li><a href="#none">해외운동</a></li>
+									<li><a href="#none">기타</a></li>
+								</ul>
+							</div>
+
+							<div class="group__result_box" data-group="group4">
+								<ul>
+									<li><a href="#none">전체</a></li>
+									<li class="on"><a href="#none">2000년 이후</a></li>
+									<li><a href="#none">1990년대</a></li>
+									<li><a href="#none">1980년대</a></li>
+									<li><a href="#none">1970년대</a></li>
+									<li><a href="#none">1960년대</a></li>
+									<li><a href="#none">1950년대</a></li>
+									<li><a href="#none">1940년대</a></li>
+									<li><a href="#none">1930년대</a></li>
+									<li><a href="#none">1920년대</a></li>
+									<li><a href="#none">1910년대 이전</a></li>
+								</ul>
+							</div>
+
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+
+		</nav>
+
+		<section class="map__wrap">
+
+			<article class="map"
+					 style="background:url('img/img_map.png') no-repeat center / cover; height: 100%; width: 100%;"></article>
+
+
+			<!-- 지도 메뉴 -->
+			<article class="map__menu">
+
+				<div class="map__menu__wrap">
+					<div class="row">
+
+
+						<div class="zoom-box">
+							<a href="#none" class="zoom-plus-btn">확대</a>
+							<div class="zoom-range">
+								<input id="zoom" type="range" min="1" max="5" value="3" data-orientation="vertical">
+							</div>
+							<a href="#none" class="zoom-minus-btn">축소</a>
+						</div>
+
+
+					</div>
+
+					<div class="row">
+						<a href="#none" class="gps-btn">위치</a>
+					</div>
+					<div class="row">
+						<a href="#none" class="reset-btn">초기화</a>
+					</div>
+
+				</div>
+			</article>
+
+
+			<a href="#none" class="pin" style="top:30%; left:50%;" onclick="pinToggle(this);"></a>
+			<a href="#none" class="pin" style="top:50%; left:40%;" onclick="pinToggle(this);"></a>
+			<a href="#none" class="pin" style="top:20%; left:44%;" onclick="pinToggle(this);"></a>
+			<a href="#none" class="pin" style="top:30%; left:79%;" onclick="pinToggle(this);"></a>
+			<a href="#none" class="pin" style="top:50%; left:86%;" onclick="pinToggle(this);"></a>
+			<a href="#none" class="pin" style="top:70%; left:35%;" onclick="pinToggle(this);"></a>
+
+
+			<!-- 팝업 -->
+			<article class="pin__info" style="top:199px; left:617px;">
+
+				<div class="pin__info__wrap">
+
+					<a href="#none" class="close-btn"></a>
+
+					<div class="pin-tit-box">전쟁기념관</div>
+					<div class="pin-con-box">
+						<div class="img-box">
+							<img src="img/img_pin_img.png" alt="이미지">
+						</div>
+						<div class="info-box">
+							<div class="item">
+								<div class="subject">시&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp설</div>
+								<div class="con">기념관</div>
+							</div>
+							<div class="item">
+								<div class="subject">주&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp제</div>
+								<div class="con">기타</div>
+							</div>
+							<div class="item">
+								<div class="subject">건립연도</div>
+								<div class="con">1994</div>
+							</div>
+							<div class="item">
+								<div class="subject">지&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp역</div>
+								<div class="con">서울특별시 용산구</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="pin-menu-box">
+						<a href="#none" class="more-btn">더보기</a>
+					</div>
+
+				</div>
+
+			</article>
+
+		</section>
+
+		<article class="map__info__msg">지도에서 보여주는 정보는 법적 효력이 없으며, 참고용으로만 활용하시기 바랍니다.</article>
+	</div>
+
+    <div class="bt_wrapper">
+		<div class="bt_laucher">
+		  <div class="bt_icon_wrapper" id="bt_icon">
+			<div class="bt_icon_styled">
+			  <div class="bt_icon">
+				<img
+				  src="./asset/BT Meta logo white .svg"
+				  alt="Bt Meta Logo Icon"
+				/>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="bt_canvas">
+		  <div class="bt_meta_wrapper" id="bt_canvas">
+			<div class="bt_meta_styled">
+			  <div class="bt_meta_close_btn" id="bt_meta_close_btn">
+				X
+			  </div>
+			  <div class="webgl-wrapper">
+				<div class="aspect"></div>
+				<div class="webgl-content">
+				  <div id="unityContainer">
+					<canvas id="unity-canvas" style="background: #FFFFFF"></canvas>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-ui-1.12.1.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/rangeslider.min.js"></script>
+<script src="MyLoader.js"></script>
+
+<script>
+	createUnityInstance(document.querySelector("#unity-canvas"), {
+	  dataUrl: "Build/WebGL.data.unityweb",
+	  frameworkUrl: "Build/WebGL.framework.js.unityweb",
+	  codeUrl: "Build/WebGL.wasm.unityweb",
+	  streamingAssetsUrl: "StreamingAssets",
+	  companyName: "BigTeam",
+	  productName: "btmeta",
+	  productVersion: "1.0",
+	}).then((unityInstance) => {
+	  myGameInstance = unityInstance;
+	});
+
+	$('.group__result_box li a').on('click',function (){
+		$(this).parents('ul').find('li').removeClass('on');
+		$(this).parent().addClass('on');
+	})
+
+	function resultHide(){
+		$('.search-result-box').hide();
+	}
+
+	$('.toggle-btn').on('click', function () {
+		$('.lnb__con__wrap').toggle();
+	})
+
+	$('input[type=range]').rangeslider({
+		polyfill: false,
+		onInit: function () {
+		}
+	}).on('input', function () {
+	});
+
+
+	$('.pin__info .close-btn').on('click', function () {
+		$('.pin__info').hide();
+	});
+
+	$('.map__menu .zoom-plus-btn').on('click', function () {
+		var _range = $('#zoom');
+		_range.val(parseInt(_range.val()) + 1).change();
+	});
+
+	$('.map__menu .zoom-minus-btn').on('click', function () {
+		var _range = $('#zoom');
+		_range.val(parseInt(_range.val()) - 1).change();
+	});
+
+
+	$('.lnb__menu a').on('click', function () {
+		$('.lnb__con').show();
+	});
+
+	function pinToggle(e) {
+
+		$('.pin__info').css({
+			"top": e.offsetTop - 230,
+			"left": e.offsetLeft - 115
+		}).show();
+
+
+	};
+
+	function likeToggle(e) {
+
+		console.log($(e).hasClass('on'))
+
+
+		if ($(e).hasClass('on')) {
+			$(e).removeClass('on');
+		} else {
+			$(e).addClass('on');
+		}
+
+	};
+
+	$('.lnb__menu a').on('click', function () {
+
+		$('.lnb__menu li').removeClass('on');
+		$(this).parent().addClass('on');
+
+	})
+
+
+	$('.tabs__box a').on('click', function () {
+
+		$('.tabs__box li').removeClass('on');
+		$(this).parent().addClass('on');
+	})
+
+	$('.group__box ul li a').on('click',function (){
+		$('.group__box ul li').removeClass('on');
+		$(this).parent().addClass('on');
+
+
+		var _group = $(this).data('group');
+		$('.group__result_box').hide();
+		$('.group__result_box[data-group=' + _group + ']').show();
+
+
+	})
+</script>
+
+</body>
+</html>

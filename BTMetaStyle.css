@@ -6,6 +6,7 @@ body {
 }
 .bt_wrapper {
   position: fixed !important;
+  z-index: 999 !important;
   bottom: 0px !important;
   animation: 0.5s ease-out 0s 1 normal none running jBcSpD !important;
   right: 0px !important;
@@ -18,14 +19,14 @@ body {
   ) !important;
 }
 .bt_laucher {
-  position: fixed !important;
-  z-index: 10000000 !important;
+  position: absolute !important;
+  z-index: 1000 !important;
   display: block !important;
   flex-wrap: nowrap !important;
   width: auto !important;
   overflow: visible !important;
   background: transparent !important;
-  bottom: calc(30px + env(safe-area-inset-bottom)) !important;
+  bottom: 30px !important;
   right: 30px !important;
 }
 
